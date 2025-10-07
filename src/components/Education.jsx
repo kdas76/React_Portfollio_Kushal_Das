@@ -1,85 +1,17 @@
-// import React, { useState, useEffect } from 'react';
-// // Education Component
-// function Education() {
-//   const education = [
-//     {
-//       institution: "University of Engineering & Management, Kolkata",
-//       degree: "B.Tech in Computer Science & Engineering (AIML) · 2022–2026",
-//       description: "Focused on Artificial Intelligence, Machine Learning, and Generative Architectures. CGPA: 7.5/10"
-//     },
-//     {
-//       institution: "Khatra High School",
-//       degree: "WBCHSE · 93%",
-//       description: "Science stream with early research interest in mathematics."
-//     }
-//   ];
-
-//   return (
-//     <section id="education" className="mt-16 scroll-mt-24">
-//       <h2 className="text-[#6ba4ff] font-semibold text-2xl mb-5 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-16 after:h-1 after:bg-gradient-to-r after:from-[#00aaff] after:to-[#0072ff] after:rounded">
-//         Education
-//       </h2>
-//       <div className="border-l-2 border-[#0072ff] pl-5">
-//         {education.map((item, i) => (
-//           <div key={i} className="mb-5">
-//             <h4 className="text-white mb-1 font-semibold">{item.institution}</h4>
-//             <span className="text-[#89c9ff] text-sm">{item.degree}</span>
-//             <p className="text-[#ccc] mt-1">{item.description}</p>
-//           </div>
-//         ))}
-//       </div>
-//     </section>
-//   );
-// }
-
-// export default Education;
-
-// import React from 'react'
-
-// export default function Education() {
-//   const education = [
-//     {
-//       institution: "University of Engineering & Management, Kolkata",
-//       degree: "B.Tech in Computer Science & Engineering (AIML) · 2022–2026",
-//       description: "Focused on Artificial Intelligence, Machine Learning, and Generative Architectures. CGPA: 7.5/10"
-//     },
-//     {
-//       institution: "Khatra High School",
-//       degree: "WBCHSE · 93%",
-//       description: "Science stream with early research interest in mathematics."
-//     }
-//   ]
-
-//   return (
-//     <section id="education" className="mt-4">
-//       <h2 className="section-title">Education</h2>
-//       <div className="edu ps-3">
-//         {education.map((e, i) => (
-//           <div key={i} className="mb-3">
-//             <h5 className="mb-1">{e.institution}</h5>
-//             <div className="text-primary small">{e.degree}</div>
-//             <p className="text-white mb-0">{e.description}</p>
-//           </div>
-//         ))}
-//       </div>
-//     </section>
-//   )
-// }
-
 import React from "react";
 import { FaUniversity, FaSchool } from "react-icons/fa";
 
 export default function Education() {
   const education = [
     {
-      icon: <FaUniversity className="text-info fs-4 me-3" />,
-      institution: "University of Engineering & Management, Kolkata",
+      icon: <FaUniversity className="text-info icon-size fs-4 me-3 flex-shrink-0" />,
+      institution: "University of Engineering & Management, Jaipur",
       degree: "B.Tech in Computer Science & Engineering (AIML) · 2022–2026",
       description:
         "Focused on Artificial Intelligence, Machine Learning, and Generative Architectures. CGPA: 7.5/10",
     },
     {
-      icon: <FaSchool className="text-info fs-4 me-3" />,
+      icon: <FaSchool className="text-info fs-4 me-3 flex-shrink-0" />,
       institution: "Khatra High School",
       degree: "WBCHSE · 93%",
       description:

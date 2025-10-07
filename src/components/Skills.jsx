@@ -1,78 +1,26 @@
-// import React, { useState, useEffect } from 'react';
-
-// function Skills() {
-//   return (
-//     <section id="skills" className="mt-16 scroll-mt-24">
-//       <h2 className="text-[#6ba4ff] font-semibold text-2xl mb-5 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-16 after:h-1 after:bg-gradient-to-r after:from-[#00aaff] after:to-[#0072ff] after:rounded">
-//         Skills
-//       </h2>
-//       <ul className="list-none pl-0">
-//         <li className="mb-2 pl-6 relative leading-relaxed before:content-['▹'] before:absolute before:left-0 before:text-[#00aaff]">
-//           <strong>Languages:</strong> Python, Java, SQL
-//         </li>
-//         <li className="mb-2 pl-6 relative leading-relaxed before:content-['▹'] before:absolute before:left-0 before:text-[#00aaff]">
-//           <strong>ML/DL & Research:</strong> Transformers, GNNs, Diffusion Models, Representation Learning, Generative Modeling
-//         </li>
-//         <li className="mb-2 pl-6 relative leading-relaxed before:content-['▹'] before:absolute before:left-0 before:text-[#00aaff]">
-//           <strong>Frameworks:</strong> PyTorch, TensorFlow, Scikit-learn, Keras, Flask, Streamlit
-//         </li>
-//         <li className="mb-2 pl-6 relative leading-relaxed before:content-['▹'] before:absolute before:left-0 before:text-[#00aaff]">
-//           <strong>Tools:</strong> Git, Colab, Kaggle, Linux, VS Code
-//         </li>
-//       </ul>
-//     </section>
-//   );
-// }
-
-// export default Skills;
-
-// import React from 'react'
-
-// export default function Skills() {
-//   return (
-//     <section id="skills" className="mt-4">
-//       <h2 className="section-title">Skills</h2>
-//       <div className="row">
-//         <div className="col-md-6">
-//           <ul className="list-bullet">
-//             <li><strong>Languages:</strong> Python, Java, SQL</li>
-//             <li><strong>ML/DL & Research:</strong> Transformers, GNNs, Diffusion Models, Representation Learning, Generative Modeling</li>
-//           </ul>
-//         </div>
-//         <div className="col-md-6">
-//           <ul className="list-bullet">
-//             <li><strong>Frameworks:</strong> PyTorch, TensorFlow, Scikit-learn, Keras, Flask, Streamlit</li>
-//             <li><strong>Tools:</strong> Git, Colab, Kaggle, Linux, VS Code</li>
-//           </ul>
-//         </div>
-//       </div>
-//     </section>
-//   )
-// }
-
 import React from "react";
 import { FaCode, FaBrain, FaCogs, FaTools } from "react-icons/fa";
 
 export default function Skills() {
   const skills = [
     {
-      icon: <FaCode className="text-info fs-4 me-2" />,
+      icon: <FaCode className="text-info fs-4 me-2 flex-shrink-0" />,
       title: "Languages",
       details: "Python, Java, SQL",
     },
     {
-      icon: <FaBrain className="text-info fs-4 me-2" />,
+      icon: <FaBrain className="text-info fs-4 me-2 flex-shrink-0" />,
       title: "ML/DL & Research",
       details:
         "Transformers, GNNs, Diffusion Models, Representation Learning, Generative Modeling",
     },
     {
-      icon: <FaCogs className="text-info fs-4 me-2" />,
+      icon: <FaCogs className="text-info fs-4 me-2 flex-shrink-0" />,
       title: "Frameworks",
       details: "PyTorch, TensorFlow, Scikit-learn, Keras, Flask, Streamlit",
     },
     {
-      icon: <FaTools className="text-info fs-4 me-2" />,
+      icon: <FaTools className="text-info fs-4 me-2 flex-shrink-0" />,
       title: "Tools",
       details: "Git, Colab, Kaggle, Linux, VS Code",
     },
